@@ -1,0 +1,311 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: black;
+}
+
+.amazon-img {
+  color: orange;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.checkout-text {
+  font-size: 1.2rem;
+  font-family: Calibri, sans-serif;
+  color: white;
+  margin: 10px 0;
+}
+
+.checkout-text span {
+  color: #007185;
+}
+
+.lock-icon {
+  width: 20px;
+  height: 25px;
+  margin: 10px;
+}
+
+/* Section One */
+.section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.first-main {
+  margin: 20px 0;
+  flex: 1 1 100%;
+  max-width: 800px;
+}
+
+.review {
+  font-size: 1.3rem;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.Delivery-items {
+  border: 1px solid rgba(0, 0, 0, 0.511);
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+}
+
+.delivery-date {
+  color: green;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  margin: 10px 0;
+}
+
+.delivery-goods {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.ordered-good {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.quantity-div {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.quantity-name {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.quantity-price {
+  color: brown;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+}
+
+.quantity {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.quantity select {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+.quantity span {
+  color: blue;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 8px; /* Larger touch target */
+}
+
+.quantity span:hover {
+  color: brown;
+}
+
+.delivery-option {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.delivery-option-text {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.delivery-option div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delivery-option input {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.delivery-option-date {
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: green;
+}
+
+.delivery-option-date span {
+  color: black;
+}
+
+.summary-main {
+  border: 1px solid rgba(0, 0, 0, 0.557);
+  border-radius: 5px;
+  margin: 20px 0;
+  flex: 1 1 100%;
+  max-width: 350px;
+}
+
+.order-summary-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  margin: 15px;
+}
+
+.summary-div {
+  padding: 15px;
+}
+
+.summary-div div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.summary-price {
+  text-align: right;
+}
+
+.order-total-div p {
+  color: brown;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.place-order {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  background-color: yellow;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .first-main, .summary-main {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .amazon-img {
+    font-size: 1.3rem;
+  }
+
+  .checkout-text {
+    font-size: 1.1rem;
+  }
+
+  .lock-icon {
+    width: 18px;
+    height: 22px;
+  }
+
+  .delivery-goods {
+    flex-direction: column;
+  }
+
+  .quantity-div, .delivery-option {
+    margin-left: 0;
+  }
+
+  .summary-main {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .review {
+    font-size: 1.1rem;
+  }
+
+  .delivery-date {
+    font-size: 1rem;
+  }
+
+  .ordered-good {
+    max-width: 120px;
+  }
+
+  .quantity-name, .quantity-price, .quantity, .quantity select {
+    font-size: 0.9rem;
+  }
+
+  .delivery-option-text {
+    font-size: 1rem;
+  }
+
+  .delivery-option-date {
+    font-size: 0.9rem;
+  }
+
+  .order-summary-text {
+    font-size: 1.1rem;
+  }
+
+  .order-total-div p {
+    font-size: 1.2rem;
+  }
+
+  .place-order {
+    height: 36px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .amazon-img {
+    font-size: 1.2rem;
+  }
+
+  .checkout-text {
+    font-size: 1rem;
+  }
+
+  .ordered-good {
+    max-width: 100px;
+  }
+}

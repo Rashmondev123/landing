@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy Project</title>
+    <link rel="stylesheet" href="Amazon.css">
+</head>
+<body>
+
+<!-- Header -->
+
+    <header class="start-header">
+
+        <!-- linking the amazon logo with index.html i.e its self -->
+
+        <a href="index.html">
+           
+            <a href="" class="amazon-img" style="text-decoration: none;color: orange; font-size: 2em;">ShopEasy</a>
+        </a>
+
+        <!-- linking the amazon logo with index.html i.e its self -->
+
+        <div class="parent-div">
+            <input type="text" placeholder="Search" class="search-bar">
+
+            <div class="search-icon-div">
+                <img src="Images/search-icon.png" alt="">
+            </div>
+
+        </div>
+
+           <div class="return-cart-div">
+
+            <!-- linking the returns and order with returns-order.html which is another page entirely  -->
+
+            <a href="returns-order.html">
+                <p class="return-order">Returns <br><span>& Orders</span></p>
+            </a>
+
+             <!-- linking the returns and order with returns-order.html which is another page entirely  -->
+
+             <!-- linking the cart with cart.html which is another page entirely for cart quantity records  -->
+
+           <a href="cart.html">
+            <div class="Cart-div">
+                <img src="Images/cart-icon.png" alt="" class="Cart-icon">
+                <p class="cart-txt">Cart</p>
+                <p class="cart-quantity" id="showValue">0</p>
+            </div>
+           </a>
+
+           <!-- linking the cart with cart.html which is another page entirely for cart quantity records  -->
+
+           </div>
+
+        <!-- responsiveness image -->
+
+        <img src="Images/icons8_menu_64px_1.png" alt="" class="menu-icon" id="opn" onclick="expand()">
+
+        <img src="Images/icons8_collapse_48px.png" alt="" class="delete" id="cls" onclick="collapse()">
+
+        <!-- return order and Cart div for menu -->
+
+        <div class="menu-div" id="menu">
+            
+        <a href="returns-order.html">
+            <p class="return-order">Returns <br><span>& Orders</span></p>
+        </a>
+
+        <a href="cart.html">
+            <div class="Cart-div">
+                <img src="Images/cart-icon.png" alt="" class="Cart-icon">
+                <p class="cart-txt">Cart</p>
+                <p class="cart-quantity">0</p>
+            </div>
+        </a>
+        </div>
+    </header>
+
+    <!-- section one -->
+
+    <section class="section-1">
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+                <select name="" id="valu" class="Quantity-value">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <img src="" id="oneObj">
+            <div>
+                <button class="cart-btn" onclick="add('One')">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/intermediate-composite-basketball.jpg" alt="" class="object">
+            <p class="object-name">Intermediate Size Basketball</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="valu2" class="Quantity-value">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div>
+                <button class="cart-btn" onclick="add('Two')">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object" id="object1">
+            <p class="object-name">Adults Plain Cotton T-Shirt - 2 Pack</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="valu3" class="Quantity-value">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div>
+                <button class="cart-btn" onclick="add('Three')">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">2 Slot Toaster - Black</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="valu4" class="Quantity-value">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div>
+                <button class="cart-btn" onclick="add('Four')">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6 Piece White Dinner Plate Set</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="valu5" class="Quantity-value">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div>
+                <button class="cart-btn" onclick="add('Five')">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Se</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="valu6" class="Quantity-value">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div>
+                <button class="cart-btn" onclick="add('Six')">Add To Cart</button>
+            </div>
+        </main>
+    </section>
+
+<!-- section two -->
+
+    <section class="section-1">
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/intermediate-composite-basketball.jpg" alt="" class="object">
+            <p class="object-name">Intermediate Size Basketball</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Adults Plain Cotton T-Shirt - 2 Pack</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">2 Slot Toaster - Black</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6 Piece White Dinner Plate Set</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Se</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+    </section>
+    <section class="section-1">
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/intermediate-composite-basketball.jpg" alt="" class="object">
+            <p class="object-name">Intermediate Size Basketball</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Adults Plain Cotton T-Shirt - 2 Pack</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">2 Slot Toaster - Black</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6 Piece White Dinner Plate Set</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Se</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+    </section>
+    <section class="section-1">
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/intermediate-composite-basketball.jpg" alt="" class="object">
+            <p class="object-name">Intermediate Size Basketball</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Adults Plain Cotton T-Shirt - 2 Pack</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">2 Slot Toaster - Black</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6 Piece White Dinner Plate Set</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Se</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+    </section>
+    <section class="section-1">
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/intermediate-composite-basketball.jpg" alt="" class="object">
+            <p class="object-name">Intermediate Size Basketball</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">Adults Plain Cotton T-Shirt - 2 Pack</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">2 Slot Toaster - Black</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6 Piece White Dinner Plate Set</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+        <main class="section1-parent">
+            <img src="Images/athletic-cotton-socks-6-pairs.jpg" alt="" class="object">
+            <p class="object-name">6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Se</p>
+            <div class="rating-div">
+                <img src="Images/rating-45.png" alt="" class="rating-img">
+                <p class="rating-denotion">87</p>
+            </div>
+            <p class="price">$10.90</p>
+            <select name="" id="" class="Quantity-value">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </main>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>

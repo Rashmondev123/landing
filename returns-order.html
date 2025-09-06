@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Orders</title>
+  <link rel="stylesheet" href="returns-order.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="start-header">
+    <a href="index.html" class="amazon-img" style="text-decoration: none; color: orange; font-size: 1.5em;">ShopEasy</a>
+    <div class="parent-div">
+      <input type="text" placeholder="Search" class="search-bar">
+      <div class="search-icon-div">
+        <img src="Images/search-icon.png" alt="Search">
+      </div>
+    </div>
+    <a href="returns-order.html" class="return-order">Returns <br><span>& Orders</span></a>
+    <a href="cart.html" class="Cart-div">
+      <img src="Images/cart-icon.png" alt="Cart" class="Cart-icon">
+      <p class="cart-txt">Cart</p>
+      <p class="cart-quantity" id="cartQuantity">0</p>
+    </a>
+    <img src="Images/menu-icon.png" alt="Menu" class="menu-icon" id="opn" onclick="expand()">
+    <img src="Images/close.png" alt="Close" class="delete" id="cls" onclick="collapse()">
+    <div class="menu-div" id="menu">
+      <a href="returns-order.html" class="return-order">Returns & Orders</a>
+      <a href="cart.html" class="Cart-div">
+        <img src="Images/cart-icon.png" alt="Cart" class="Cart-icon">
+        <p class="cart-txt">Cart</p>
+      </a>
+    </div>
+  </header>
+
+  <!-- Orders Section -->
+  <section class="section1">
+    <main class="parent-main">
+      <p class="order-txt">Your Orders</p>
+      <div id="ordersContainer">
+        <!-- Dynamic orders populated by JavaScript -->
+      </div>
+    </main>
+  </section>
+
+  <script src="returns-order.js"></script>
+</body>
+</html>
